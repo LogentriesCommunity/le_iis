@@ -1,10 +1,10 @@
 # Agentless IIS and Nxlog to Logentries.
 
-1. Install Nxlog
+## Install Nxlog
 
 [Download](http://nxlog.org/products/nxlog-community-edition/download) the latest version of nxlog. 
 
-2. Insert configuration 
+## Insert configuration 
 
 Open the Nxlog configuration file located at: `C:\Program Files (x86)\nxlog\conf\nxlog.conf`
 
@@ -111,10 +111,10 @@ Also you may need to uncomment where to set the ROOT to the folder your nxlog wa
 
 On Line 77 you may need to change the IIS File path is located depending on your setup, can use * for wildcard. The default place for access logs is `%SystemDrive%\inetpub\logs\LogFiles`
 
-3. Restart the Nxlog service
+## Restart the Nxlog service
 
 Open the services tool in the start menu. Search for nxlog in the services and then restart it
 
-4. View a page on your IIS server
+## View a page on your IIS server
 
 View a webpage on your IIS server to generate a new log entry. This will only log new events that have occurred after the restart.
