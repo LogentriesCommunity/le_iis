@@ -61,7 +61,7 @@ LogFile %ROOT%\\data\\nxlog.log
 <Output out>
  Module om_tcp
  Host data.logentries.com
- Port 10000
+ Port 80
  
  Exec to_syslog_ietf(); $raw_event = replace($raw_event, 'NXLOG@14506', 'LOG-TOKEN-HERE@41506 tag="logentries"] [', 1);
  
